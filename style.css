@@ -1,0 +1,173 @@
+/*setup */
+
+* {
+  box-sizing: border-box;
+  background-color: #f8f8ff;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+
+/* Layout- Applying flexbox !!!*/
+main {
+  display:inline-flex;
+  /*display:flex;*/
+  /*flex-wrap: wrap;*/
+  background-image: url(images/schoolbg.png);  /*add a backgroud img if you wish*/
+  background-blend-mode: lighten;
+  background-size: 1800px;
+  background-color: rgba(0,0,0,0.3);
+  margin: 30px;
+  padding: 30px;
+}
+
+/*floating left*/
+section {
+  width: 50%;
+
+}
+
+aside {
+  width: 30%;
+  text-shadow: 0.5px 0.5px;
+}
+
+nav {
+  width: 18%;
+}
+
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* Find google fonts: a serif site-wide font for the general text body,
+coupled with sans-serif or slab serif for the headings might be nice.*/
+/*Apply your body font to the whole page, and your heading font to your headings.*/
+
+html {
+  font-family: 'Alice', serif;
+  font-size: 10px;
+}
+
+/*Find a different font for heading: sans-serif or slab serif*/
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/*Give the first paragraph after each heading in the a little bit of text-indentation,say 20px.*/
+section h2+p {
+  text-indent: 20px;
+}
+
+
+
+/*Word Spacing and Letter Spacing*/
+p, li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+}
+
+
+
+/* lists: spacing. Each list item should have the same line-height as a paragraph line,
+and each list should have the same spacing at its top and bottom as you have between paragraphs. */
+
+ul, ol {
+  margin: 1.6rem;
+}
+
+ul {
+  list-style-type:circle; /*Circle bullet points*/
+}
+
+ol {
+  list-style-type: lower-latin;  /* Use Letters to order the list instead of numbers*/
+}
+
+/* Nav button */
+
+nav li {
+  list-style-type: none;     /*Get rid of the bullet points*/
+}
+
+.btn-group button {
+  background-color: brown; /* brown background */
+  border: 5px solid white; /* JUST white border */
+  color: white; /* white text */
+  text-align: center;
+  padding: 24px 50px; /* padding */
+  width: 100%;
+  font-family: 'Alice', serif;
+  font-size: 15px;
+  cursor: pointer; /* hand icon */
+
+}
+
+/* Background color changed when being hovered */
+.btn-group button:hover {
+  background-color: black;
+}
+
+
+/* Links*/   /* target="_blank" in HTML makes the external links open in a new tab*/
+a {
+  outline: none;
+}
+
+
+
+a:link {
+  color: brown;
+
+a:visited{
+  color: brown;
+}
+
+/*Make it so that links are underlined by default,
+but when you hover or focus them, the underline disappears.*/
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+
+/*Give the link, visited, focus,
+and hover states some colors that go with the color of the horizontal bars at the top and bottom of the page.*/
+a:active {
+  text-shadow:
+               0px 0px 10px purple,
+               0px 0px 5px purple;
+}
+
+
+footer {
+  text-shadow: 0.5px 0.5px;
+}
