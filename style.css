@@ -14,13 +14,13 @@ body {
 
 /* Layout- Applying flexbox !!!*/
 main {
-  display:inline-flex;
-  /*display:flex;*/
+  /*display:inline-flex;*/
+  display:flex;
   /*flex-wrap: wrap;*/
   background-image: url(images/schoolbg.png);  /*add a backgroud img if you wish*/
   background-blend-mode: lighten;
   background-size: 1800px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: gray;
   margin: 30px;
   padding: 30px;
 }
@@ -120,9 +120,9 @@ nav li {
 
 
 .btn-group button {
-  background-color: none; /* brown background */
+  background-color: white; /* background */
   border: 5px solid brown; /* JUST  border */
-  color: brown; /* white text */
+  color: brown; /* text */
   text-align: center;
   padding: 24px 50px; /* padding */
   width: 100%;
